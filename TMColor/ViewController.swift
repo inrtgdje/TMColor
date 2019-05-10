@@ -10,16 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var  backgroundColor = UIColor.randomColor()
+    var  backgroundColor = UIColor(hexString: "0xff753e")
     let colorView = UIView.init(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
     let  inverseView = UIView.init(frame:CGRect(x: 200, y: 200, width: 200, height: 200))
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        colorView.backgroundColor = backgroundColor
+        inverseView.backgroundColor = backgroundColor.inverseColor()
         self.view.addSubview(colorView)
         self.view.addSubview(inverseView)
-        
+        let str = "abcd"
+        print(str.substring(toIndex: 8))
         // Do any additional setup after loading the view.
     }
 

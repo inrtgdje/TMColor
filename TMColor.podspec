@@ -40,9 +40,9 @@ Pod::Spec.new do |spec|
 
 
  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author             = { "tianming tang" => "inrtgdje@gmail.com" }
-  spec.authors            = { "tianming tang" => "inrtgdje@gmail.com" }
-  spec.social_media_url   = "https://twitter.com/tianming tang"
+ spec.author             = { "tianming tang" => "inrtgdje@gmail.com" }
+ spec.authors            = { "tianming tang" => "inrtgdje@gmail.com" }
+ # spec.social_media_url   = "https://twitter.com/tianming tang"
 
 
   spec.ios.deployment_target = "9.0"
