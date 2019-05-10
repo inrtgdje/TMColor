@@ -17,10 +17,7 @@ extension UIColor {
    
     convenience public init(rgb:UInt32) {
         
-        let r = (CGFloat)((rgb & 0xFF0000) >> 16) / 255.0
-        let g = (CGFloat)((rgb & 0xFF00) >> 8) / 255.0
-        let b = (CGFloat)(rgb & 0xFF) / 255.0
-        self.init(red: r, green: g, blue: b, alpha: 1.0)
+        self.init(rgb:rgb,alpha:1.0)
     }
     
     
@@ -33,7 +30,14 @@ extension UIColor {
        self.init(red: r, green: g, blue: b, alpha: a)
     }
     
-    convenience init(hexString:String) {
+    convenience init(rgb:UInt32,alpha:CGFloat) {
+        let r = (CGFloat)((rgb & 0xFF0000) >> 16) / 255.0
+        let g = (CGFloat)((rgb & 0xFF00) >> 8) / 255.0
+        let b = (CGFloat)(rgb & 0xFF) / 255.0
+        self.init(red: r, green: g, blue: b, alpha:alpha)
+    }
+    
+    convenience public init(hexString:String) {
         var red:CGFloat = 0
         var green:CGFloat = 0
         var blue:CGFloat = 0
@@ -47,6 +51,32 @@ extension UIColor {
         }
     }
     
+    func rgbValue() -> UInt32 {
+        var r:CGFloat = 0
+        var g:CGFloat = 0
+        var b:CGFloat = 0
+        var a:CGFloat = 0
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        let red = UInt32(r * 255)
+        let green = UInt32(g * 255)
+        let blue = UInt32(b * 255)
+        
+        return (red << 16) + (green << 8) + blue
+    }
+    
+    func rgbaValue() -> UInt32 {
+        
+        var r:CGFloat = 0
+        var g:CGFloat = 0
+        var b:CGFloat = 0
+        var a:CGFloat = 0
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        let red = UInt32(r * 255)
+        let green = UInt32(g * 255)
+        let blue = UInt32(b * 255)
+        let alpha = UInt32(a * 255)
+        return (red << 24) + (green << 16) + (blue << 8) + alpha
+    }
     
     private static func hexStrToRGBA(str:String, red: UnsafeMutablePointer<CGFloat>,green: UnsafeMutablePointer<CGFloat>,blue: UnsafeMutablePointer<CGFloat>,alpha: UnsafeMutablePointer<CGFloat>) -> Bool {
         let hexStr = str.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
@@ -88,11 +118,7 @@ extension UIColor {
         return true
     }
     
-    private func hexStrToInt(str:String) ->Int{
-        var result: Int = 0
-        result = Int(str,radix: 16) ?? 0
-        return result
-    }
+   
     
    class public func randomColor() -> UIColor {
         let red   = CGFloat.random(in: 0...1.0)
