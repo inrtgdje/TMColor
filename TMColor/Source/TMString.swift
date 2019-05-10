@@ -38,5 +38,42 @@ extension String {
     
     
     
+   /// 暂时不够完善
+   ///
+   /// - Returns: <#return value description#>
+   private func  checkPassWord() -> Bool{
+        
+        let regex  = #"(?=.*[a-zA-Z0-9].*)(?=.*[a-zA-Z].*)(?=.*[0-9].*).{6,16}"#
+        return self.evaluateWithRegex(regex)
+        
+    }
     
+    
+    func isMobileNumber() ->Bool{
+        let mobileRegex = #"1[34578][0-9]{9}"#
+        
+        return self.evaluateWithRegex(mobileRegex)
+    }
+    
+    func isTelePhoneNumber() ->Bool{
+        let mobileRegex = #"(0[0-9]2)-?[0-9]{8}|0[0-9]{3}-?[0-9]{7,8}"#
+        
+        return self.evaluateWithRegex(mobileRegex)
+    }
+    
+    func isEmail() ->Bool{
+        
+        let emailRegex = #"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}"#
+        return self.evaluateWithRegex(emailRegex)
+    }
+    
+  private  func evaluateWithRegex(_ regex:String) -> Bool{
+        var result = ""
+        let regex = try! NSRegularExpression(pattern: regex, options: .caseInsensitive)
+        let res = regex.matches(in: self, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.count))
+    for checkingRes in res {
+        result = result + (self as NSString).substring(with: checkingRes.range)
+    }
+        return result == self
+    }
 }

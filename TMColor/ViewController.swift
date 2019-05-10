@@ -20,8 +20,13 @@ class ViewController: UIViewController {
         inverseView.backgroundColor = backgroundColor.inverseColor()
         self.view.addSubview(colorView)
         self.view.addSubview(inverseView)
-        let str = "abcd"
-        print(str.substring(toIndex: 8))
+        let str = "ttm0402@163.com"
+        let mobile = "18607164198"
+     
+        let telephone = "7286594944"
+        print(str.isEmail())
+        print(mobile.isMobileNumber())
+        print(telephone.isTelePhoneNumber())
         // Do any additional setup after loading the view.
     }
 

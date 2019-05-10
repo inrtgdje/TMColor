@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		578166FE22852012004CC469 /* TMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578166FD22852012004CC469 /* TMString.swift */; };
 		5781670022854EC6004CC469 /* Sweep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578166FF22854EC6004CC469 /* Sweep.swift */; };
+		5781670222855CC8004CC469 /* TMNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781670122855CC8004CC469 /* TMNumber.swift */; };
 		57AFF6E52283D9EB00C9A46F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFF6E42283D9EB00C9A46F /* AppDelegate.swift */; };
 		57AFF6E72283D9EB00C9A46F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFF6E62283D9EB00C9A46F /* ViewController.swift */; };
 		57AFF6EA2283D9EB00C9A46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AFF6E82283D9EB00C9A46F /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		578166FD22852012004CC469 /* TMString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMString.swift; sourceTree = "<group>"; };
 		578166FF22854EC6004CC469 /* Sweep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweep.swift; sourceTree = "<group>"; };
+		5781670122855CC8004CC469 /* TMNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMNumber.swift; sourceTree = "<group>"; };
 		57AFF6E12283D9EB00C9A46F /* TMColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AFF6E42283D9EB00C9A46F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57AFF6E62283D9EB00C9A46F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				57AFF6F62283DA8100C9A46F /* TMColor.swift */,
 				578166FD22852012004CC469 /* TMString.swift */,
 				578166FF22854EC6004CC469 /* Sweep.swift */,
+				5781670122855CC8004CC469 /* TMNumber.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				578166FE22852012004CC469 /* TMString.swift in Sources */,
 				57AFF6E72283D9EB00C9A46F /* ViewController.swift in Sources */,
 				57AFF6E52283D9EB00C9A46F /* AppDelegate.swift in Sources */,
+				5781670222855CC8004CC469 /* TMNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
