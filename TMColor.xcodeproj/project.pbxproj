@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		570AFB8A22891740005D2C40 /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AFB8922891740005D2C40 /* ImageFormat.swift */; };
 		570AFB8C22893EE8005D2C40 /* WrappingSequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AFB8B22893EE8005D2C40 /* WrappingSequences.swift */; };
+		57124A6422A11F5800D03A8F /* SomeAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57124A6322A11F5800D03A8F /* SomeAlgorithm.swift */; };
 		578166FE22852012004CC469 /* TMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578166FD22852012004CC469 /* TMString.swift */; };
 		5781670022854EC6004CC469 /* Sweep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578166FF22854EC6004CC469 /* Sweep.swift */; };
 		5781670222855CC8004CC469 /* TMNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781670122855CC8004CC469 /* TMNumber.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		570AFB8922891740005D2C40 /* ImageFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFormat.swift; sourceTree = "<group>"; };
 		570AFB8B22893EE8005D2C40 /* WrappingSequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappingSequences.swift; sourceTree = "<group>"; };
+		57124A6322A11F5800D03A8F /* SomeAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeAlgorithm.swift; sourceTree = "<group>"; };
 		578166FD22852012004CC469 /* TMString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMString.swift; sourceTree = "<group>"; };
 		578166FF22854EC6004CC469 /* Sweep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweep.swift; sourceTree = "<group>"; };
 		5781670122855CC8004CC469 /* TMNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMNumber.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				5781670122855CC8004CC469 /* TMNumber.swift */,
 				570AFB8922891740005D2C40 /* ImageFormat.swift */,
 				570AFB8B22893EE8005D2C40 /* WrappingSequences.swift */,
+				57124A6322A11F5800D03A8F /* SomeAlgorithm.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				570AFB8A22891740005D2C40 /* ImageFormat.swift in Sources */,
 				57AFF6E52283D9EB00C9A46F /* AppDelegate.swift in Sources */,
 				570AFB8C22893EE8005D2C40 /* WrappingSequences.swift in Sources */,
+				57124A6422A11F5800D03A8F /* SomeAlgorithm.swift in Sources */,
 				5781670222855CC8004CC469 /* TMNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

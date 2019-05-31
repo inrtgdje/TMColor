@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var  backgroundColor = UIColor(hexString: "0xff753e")
+    var  backgroundColor = UIColor.init(rgba: 0xff753e00)
     let colorView = UIView.init(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
     let  inverseView = UIView.init(frame:CGRect(x: 200, y: 200, width: 200, height: 200))
     override func viewDidLoad() {
