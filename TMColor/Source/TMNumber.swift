@@ -35,10 +35,10 @@ extension Double {
         var outputCharacters = ""
         var integral = ""
         var decimal = ""
-        var digits = [CN_ZERO, CN_ONE, CN_TWO, CN_THREE, CN_FOUR, CN_FIVE, CN_SIX, CN_SEVEN, CN_EIGHT, CN_NINE]
-        var radices = ["", CN_TEN, CN_HUNDRED, CN_THOUSAND]
-        var bigRadices = ["", CN_TEN_THOUSAND, CN_HUNDRED_MILLION]
-        var decimals = [CN_TEN_CENT, CN_CENT]
+    let digits = [CN_ZERO, CN_ONE, CN_TWO, CN_THREE, CN_FOUR, CN_FIVE, CN_SIX, CN_SEVEN, CN_EIGHT, CN_NINE]
+    let radices = ["", CN_TEN, CN_HUNDRED, CN_THOUSAND]
+    let bigRadices = ["", CN_TEN_THOUSAND, CN_HUNDRED_MILLION]
+    let decimals = [CN_TEN_CENT, CN_CENT]
         var p = 0
         var d = ""
         var quotient = 0
