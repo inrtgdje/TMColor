@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5709016024528FA2004AEE17 /* ColorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5709015F24528FA2004AEE17 /* ColorList.swift */; };
 		570AFB8A22891740005D2C40 /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AFB8922891740005D2C40 /* ImageFormat.swift */; };
 		570AFB8C22893EE8005D2C40 /* WrappingSequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AFB8B22893EE8005D2C40 /* WrappingSequences.swift */; };
 		57124A6422A11F5800D03A8F /* SomeAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57124A6322A11F5800D03A8F /* SomeAlgorithm.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5709015F24528FA2004AEE17 /* ColorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorList.swift; sourceTree = "<group>"; };
 		570AFB8922891740005D2C40 /* ImageFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFormat.swift; sourceTree = "<group>"; };
 		570AFB8B22893EE8005D2C40 /* WrappingSequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappingSequences.swift; sourceTree = "<group>"; };
 		57124A6322A11F5800D03A8F /* SomeAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeAlgorithm.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				57AFF6EB2283D9EE00C9A46F /* Assets.xcassets */,
 				57AFF6ED2283D9EE00C9A46F /* LaunchScreen.storyboard */,
 				57AFF6F02283D9EE00C9A46F /* Info.plist */,
+				5709015F24528FA2004AEE17 /* ColorList.swift */,
 			);
 			path = TMColor;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				570AFB8A22891740005D2C40 /* ImageFormat.swift in Sources */,
 				57AFF6E52283D9EB00C9A46F /* AppDelegate.swift in Sources */,
 				578E9CAD22B0945B00E914D2 /* Metal.metal in Sources */,
+				5709016024528FA2004AEE17 /* ColorList.swift in Sources */,
 				570AFB8C22893EE8005D2C40 /* WrappingSequences.swift in Sources */,
 				57503FB022A4EC4D00855703 /* KeyChain.swift in Sources */,
 				57124A6422A11F5800D03A8F /* SomeAlgorithm.swift in Sources */,
@@ -357,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6MWDMC3N2;
 				INFOPLIST_FILE = TMColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6MWDMC3N2;
 				INFOPLIST_FILE = TMColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

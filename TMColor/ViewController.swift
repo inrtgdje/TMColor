@@ -8,6 +8,7 @@
 
 import UIKit
 import MetalKit
+import SwiftUI
 class ViewController: UIViewController {
 
     var  backgroundColor = UIColor.init(rgba: 0xff753e)
@@ -23,8 +24,8 @@ class ViewController: UIViewController {
         inverseView.backgroundColor = backgroundColor.inverseColor()
         self.view.addSubview(colorView)
         self.view.addSubview(inverseView)
-        
-       
+
+
          useWorkItem()
         
         
@@ -36,7 +37,11 @@ class ViewController: UIViewController {
         colorView.backgroundColor = backgroundColor
         inverseView.backgroundColor = backgroundColor.inverseColor()
         
-      
+        let colorList = ColorList.init(colors: [.red,.green,.blue,.yellow,.orange,.purple,.pink,.primary])
+       
+        let controller = UIHostingController.init(rootView: colorList)
+        
+        self.present(controller, animated: true, completion: nil)
     }
     
     

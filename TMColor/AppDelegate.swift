@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftUI
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        let colorList = ColorList.init(colors: [.red,.green,.blue,.yellow,.orange,.purple,.pink,.primary])
+//
+//        let controller = UIHostingController.init(rootView: colorList)
+//        window?.rootViewController = controller
         return true
     }
 
